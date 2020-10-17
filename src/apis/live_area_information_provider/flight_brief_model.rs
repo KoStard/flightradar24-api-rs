@@ -1,0 +1,23 @@
+#[derive(Debug)]
+pub struct FlightBrief {
+    pub id: String,
+    pub mode_s: String,
+    pub latitude: f64,
+    pub longitude: f64,
+    pub track: i64,
+    pub altitude: i64,
+    pub speed: i64,
+    pub squawk: String,
+    pub radar: String,
+    pub model: String,
+    pub registration: String,
+    pub undefined: i64,
+    pub origin: String,
+    pub destination: String,
+    pub iata: String,
+    pub undefined2: i64,
+    pub vertical_speed: i64,
+    pub icao: String,
+    pub undefined3: i64,
+    pub airline: String,
+}
