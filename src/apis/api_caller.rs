@@ -1,8 +1,6 @@
 use reqwest::header::HeaderMap;
 use reqwest::header::USER_AGENT;
 use reqwest::Client;
-use serde::Deserialize;
-use std::fmt::Debug;
 
 // TODO load from https://fake-useragent.herokuapp.com/browsers/0.1.11
 const DEFAULT_USER_AGENT: &str =

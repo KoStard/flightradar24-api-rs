@@ -1,11 +1,10 @@
+use std::collections::HashMap;
+
+use serde_json::Value;
+
 use crate::apis::api_caller::ApiCaller;
 use crate::apis::live_area_information_provider::flight_brief_model::FlightBrief;
 use crate::models::area::Area;
-use serde::Deserialize;
-use std::any::Any;
-use std::collections::HashMap;
-use std::hash::Hash;
-use serde_json::Value;
 
 pub struct LiveAreaInformation {}
 
@@ -106,12 +105,14 @@ impl LiveAreaInformation {
 
 #[cfg(test)]
 mod tests {
+    use std::str::FromStr;
+
+    use bigdecimal::BigDecimal;
+    use tokio_test::block_on;
+
     use crate::apis::live_area_information_provider::live_area_information::LiveAreaInformation;
     use crate::models::area::Area;
     use crate::models::point::Point;
-    use bigdecimal::{BigDecimal, One, Zero};
-    use std::str::FromStr;
-    use tokio_test::block_on;
 
     #[test]
     fn generate_url_works() {

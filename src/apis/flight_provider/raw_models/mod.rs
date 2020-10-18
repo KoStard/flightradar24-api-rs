@@ -1,0 +1,16 @@
+pub mod flight_raw;
+pub mod flight_identification_raw;
+pub mod flight_identification_number_raw;
+pub mod flight_status_raw;
+pub mod aircraft_raw;
+pub mod aircraft_model_raw;
+pub mod airline_raw;
+pub mod airline_code_raw;
+pub mod airport_raw;
+pub mod airport_instance_raw;
+pub mod airport_instance_position_raw;
+pub mod airport_instance_country_raw;
+pub mod airport_instance_region_raw;
+pub mod airport_instance_timezone_raw;
+pub mod airport_instance_info_raw;
+pub mod flight_trail_position_raw;
